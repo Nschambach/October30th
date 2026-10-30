@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
 
   <style>
     body {
-      font: Arial;
+      font-family: Arial, sans-serif;
       background-color: #f4f6f8;
       color: #222;
       margin: 0;
@@ -64,13 +65,31 @@
 
 <main>
 
+  <!-- Introduction -->
   <section>
     <h2>About My Portfolio</h2>
     <p>
-      Welcome to my portfolio! 
+      Welcome to my portfolio!
     </p>
   </section>
 
+  <!-- Chart 1: Sleep Per Week -->
+  <section>
+    <h2>Chart 1: Sleep Per Week</h2>
+    <div class="chart-container">
+      <canvas id="lineChart"></canvas>
+    </div>
+  </section>
+
+  <!-- Chart 2: Dogs vs. Cats -->
+  <section>
+    <h2>Chart 2: Dogs vs. Cats</h2>
+    <div class="chart-container">
+      <canvas id="pieChart"></canvas>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Below Pie Chart -->
   <section>
     <h2>Photo Gallery</h2>
     <div class="photos">
@@ -79,20 +98,7 @@
     </div>
   </section>
 
-  <section>
-    <h2>Chart 1: Sleep Per Week</h2>
-    <div class="chart-container">
-      <canvas id="lineChart"></canvas>
-    </div>
-  </section>
-
-  <section>
-    <h2>Chart 2: Dogs vs. Cats</h2>
-    <div class="chart-container">
-      <canvas id="pieChart"></canvas>
-    </div>
-  </section>
-
+  <!-- Design Choices -->
   <section>
     <h2>Design Choices</h2>
     <p>
