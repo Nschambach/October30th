@@ -19,7 +19,7 @@
 
     header {
       background-color: #0E3386;
-      color: white;
+      color: #CC3433;
       text-align: center;
       padding: 40px;
     }
@@ -73,7 +73,7 @@
     </p>
   </section>
 
-  <!-- Chart 1: Sleep Per Week -->
+  <!-- Chart 1: Hours of Sleep Per Week -->
   <section>
     <h2>Chart 1: Sleep Per Week</h2>
     <div class="chart-container">
@@ -102,9 +102,11 @@
   <section>
     <h2>Design Choices</h2>
     <p>
-      I chose a simple layout with a light
-      background and blue header to
-      create a clean appearance that matched Cubbie blue.
+      I chose a white background with the Chicago Cubs
+      blue and red as my main colors for the text and 
+      header. I chose to make a chart about Dogs vs. Cats
+      because I have a dog and a cat and it would be
+      an easy way for my to have two pictures included.
       The charts are separated into individual
       sections to make the information easier
       to understand. I used contrasting colors
@@ -117,6 +119,7 @@
 </main>
 
 <script>
+
   // Chart 1: Line Graph
   new Chart(document.getElementById('lineChart'), {
     type: 'line',
@@ -124,10 +127,31 @@
       labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
       datasets: [{
         label: 'My Hours of Sleep',
-        data: [7, 6, 6, 7, 9],
-        borderColor: 'blue',
+        data: [6, 5, 8, 7, 9],
+        borderColor: '#0E3386',
         tension: 0.3
       }]
+    },
+    options: {
+      scales: {
+        y: {
+          min: 0,
+          max: 9,
+          ticks: {
+            stepSize: 1
+          },
+          title: {
+            display: true,
+            text: 'Hours of Sleep'
+          }
+        },
+        x: {
+          title: {
+            display: true,
+            text: 'Day of the Week'
+          }
+        }
+      }
     }
   });
 
@@ -139,7 +163,7 @@
       datasets: [{
         label: 'Preference (%)',
         data: [60, 40],
-        backgroundColor: ['#36A2EB', '#FF6384']
+        backgroundColor: ['#0E3386', '#CC3433']
       }]
     },
     options: {
